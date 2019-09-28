@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="./maths_discrete.css"/>
+    <title>Maths Discrètes</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ol>
+          <li><a href="maths_discrete.html">Chp I : Logique</a></li>
+          <li><a href="maths_discrete_Chap2.html">Chp II : Numération</a></li>
+        </ol>
+      </nav>
+      <h1>Maths Discrètes</h1>
+    </header>
+    <article>
+      <header>
+        <h2>Chapitre I : La logique</h2>
+        <h3>Convention :</h3>
+        <ul>
+          <li><p>Une proposition a exactement deux Réalisation possibles {Vraie,Fausse}</p></li>
+          <li><p>Une proposition est soit Vraie, soit Fausse</p></li>
+          <li><p>Lorsqu'une proposition est Vraie sa négation est Fausse</p></li>
+        </ul>
+      </header>
+      <section>
+        <header>
+          <h2>I] Opérations Logiques :</h2>
+        </header>
+        <h3>L'opérateur logique OU :</h3>
+        <p>Soient A et B deux propositions, la proposition A OU B est Vraies SSI
+        la proposition A ou la proposition B est Vraie</p>
+        <table>
+          <caption>Opérateur OU</caption>
+          <tr>
+            <th>A</th><th>B</th><th>A OU B</th>
+          </tr>
+          <tr>
+            <td>V</td><td>V</td><td>V</td>
+          </tr>
+          <tr>
+            <td>V</td><td>F</td><td>V</td>
+          </tr>
+          <tr>
+            <td>F</td><td>V</td><td>V</td>
+          </tr>
+          <tr>
+            <td>F</td><td>F</td><td>F</td>
+          </tr>
+        </table>
+
+        <h3>L'opérateur logique ET :</h3>
+        <p>Soient A et B deux propositions, la proposition A ET B est Vraies SSI
+        la proposition A et la proposition B sont Vraies</p>
+        <table>
+          <caption>Opérateur ET</caption>
+          <tr>
+            <th>A</th><th>B</th><th>A ET B</th>
+          </tr>
+          <tr>
+            <td>V</td><td>V</td><td>V</td>
+          </tr>
+          <tr>
+            <td>V</td><td>F</td><td>F</td>
+          </tr>
+          <tr>
+            <td>F</td><td>V</td><td>F</td>
+          </tr>
+          <tr>
+            <td>F</td><td>F</td><td>F</td>
+          </tr>
+        </table>
+
+        <h3>L'Opérateur logique NON :</h3>
+        <p>étant donné une proposition A. La proposition NON A est Vraie SSI la
+        proposition A est Fausse</p>
+        <table>
+          <tr>
+            <th>A</th><th>NON A</th>
+          </tr>
+          <tr>
+            <td>V</td><td>F</td>
+          </tr>
+          <tr>
+            <td>F</td><td>V</td>
+          </tr>
+        </table>
+
+        <h3>Propriétés :</h3>
+        <p>Soient trois propositions, A,B et C</p>
+        <ul>
+          <li><p>Commutativité</p></li>
+          <li><p>A ET B = B ET A</p></li>
+          <li><p>A OU B = B OU A</p></li>
+          <li><p>Associativité</p></li>
+          <li><p>(A ET B) ET C = A ET (B ET C)</p></li>
+        </ul>
+        <p>Soit une proposition :</p>
+        <table>
+          <tr>
+            <th>Proposition</th><th>Résultat</th><th>Proposition</th><th>Résultat</th>
+          </tr>
+          <tr>
+            <td>Vraie ET A</td><td>A</td><td>Vraie OU A</td><td>Vraie</td>
+          </tr>
+          <tr>
+            <td>Faux ET A</td><td>Faux</td><td>Faux OU A</td><td>A</td>
+          </tr>
+          <tr>
+            <td>A ET A</td><td>A</td><td>A OU A</td><td>A</td>
+          </tr>
+          <tr>
+            <td>A ET NON A</td><td>Faux</td><td>A OU NON A</td><td>Vraie</td>
+          </tr>
+        </table>
+
+        <h3>Lois de Morgan</h3>
+        <table>
+          <caption>NON (A ET B) = NON A OU NON B</caption>
+          <tr>
+            <th>A</th><th>B</th><th>NON A</th><th>NON B</th><th>A ET B</th><th>NON (A ET B)</th><th>NON A OU NON B</th>
+          </tr>
+          <tr>
+            <td>V</td><td>V</td><td>F</td><td>F</td><td>V</td><td>F</td><td>F</td>
+          </tr>
+          <tr>
+            <td>V</td><td>F</td><td>F</td><td>V</td><td>F</td><td>V</td><td>V</td>
+          </tr>
+          <tr>
+            <td>F</td><td>V</td><td>V</td><td>F</td><td>F</td><td>V</td><td>V</td>
+          </tr>
+          <tr>
+            <td>F</td><td>F</td><td>V</td><td>V</td><td>F</td><td>V</td><td>V</td>
+          </tr>
+        </table>
+        <table>
+          <caption>NON (A OU B) = NON A ET NON B</caption>
+          <tr>
+            <th>A</th><th>B</th><th>NON A</th><th>NON B</th><th>A OU B</th><th>NON (A OU B)</th><th>NON A ET NON B</th>
+          </tr>
+          <tr>
+            <td>V</td><td>V</td><td>F</td><td>F</td><td>V</td><td>F</td><td>F</td>
+          </tr>
+          <tr>
+            <td>V</td><td>F</td><td>F</td><td>V</td><td>V</td><td>F</td><td>F</td>
+          </tr>
+          <tr>
+            <td>F</td><td>V</td><td>V</td><td>F</td><td>V</td><td>F</td><td>F</td>
+          </tr>
+          <tr>
+            <td>F</td><td>F</td><td>V</td><td>V</td><td>F</td><td>V</td><td>V</td>
+          </tr>
+        </table>
+        <h3>L'Opérateur d'implication SI ALORS</h3>
+        <p>Soient A et B deux propositions, la proposition SI A ALORS B est Vraie
+        SSI la proposition A est Fausse ou la proposition A et B sont Vraies. A
+        est appellé le prémice, B est appellé la conclusion</p>
+        <table>
+          <caption>L'Opérateur d'implication</caption>
+          <tr>
+            <th>A</th><th>B</th><th>SI A ALORS B</th>
+          </tr>
+          <tr>
+            <td>V</td><td>V</td><td>V</td>
+          </tr>
+          <tr>
+            <td>V</td><td>F</td><td>F</td>
+          </tr>
+          <tr>
+            <td>F</td><td>V</td><td>V</td>
+          </tr>
+          <tr>
+            <td>F</td><td>F</td><td>V</td>
+          </tr>
+        </table>
+
+        <h3>Propriétés :</h3>
+         <table>
+           <caption>SI A ALORS B = NON A OU B</caption>
+           <tr>
+             <th>A</th><th>B</th><th>NON A</th><th>SI A ALORS B</th><th>NON A OU B</th>
+           </tr>
+           <tr>
+             <td>V</td><td>V</td><td>F</td><td>V</td><td>V</td>
+           </tr>
+           <tr>
+             <td>V</td><td>F</td><td>F</td><td>F</td><td>F</td>
+           </tr>
+           <tr>
+             <td>F</td><td>V</td><td>V</td><td>V</td><td>V</td>
+           </tr>
+           <tr>
+             <td>F</td><td>F</td><td>V</td><td>V</td><td>V</td>
+           </tr>
+         </table>
+         <table>
+           <caption>NON (SI A ALORS B) = A OU NON B</caption>
+           <tr>
+             <th>A</th><th>B</th><th>NON B</th><th>SI A ALORS B</th><th>NON (SI A ALORS B)</th><th> A ET NON B</th>
+           </tr>
+           <tr>
+             <td>V</td><td>V</td><td>F</td><td>V</td><td>F</td><td>F</td>
+           </tr>
+           <tr>
+             <td>V</td><td>F</td><td>V</td><td>F</td><td>V</td><td>V</td>
+           </tr>
+           <tr>
+             <td>F</td><td>V</td><td>F</td><td>V</td><td>F</td><td>F</td>
+           </tr>
+           <tr>
+             <td>F</td><td>F</td><td>V</td><td>V</td><td>F</td><td>F</td>
+           </tr>
+         </table>
+         <h3>Propriétés :</h3>
+         <table>
+           <caption>(A OU B) ET B = B</caption>
+           <tr>
+             <th>A</th><th>B</th><th>A OU B</th><th>(A OU B) ET B</th><th>B</th>
+           </tr>
+           <tr>
+             <td>V</td><td>V</td><td>V</td><td>V</td><td>V</td>
+           </tr>
+           <tr>
+             <td>V</td><td>F</td><td>V</td><td>F</td><td>F</td>
+           </tr>
+           <tr>
+             <td>F</td><td>V</td><td>V</td><td>V</td><td>V</td>
+           </tr>
+           <tr>
+             <td>F</td><td>F</td><td>F</td><td>F</td><td>F</td>
+           </tr>
+         </table>
+
+      </section>
+    </article>
+  </body>
+</html>

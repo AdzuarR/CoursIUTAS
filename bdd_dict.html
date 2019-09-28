@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="./bdd.css">
+    <title>BDD : Dictionnaire de Données</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="./bdd.html">BDD Accueil</a></li>
+          <li><a href="./bdd_dict.html">BDD Dictionnaires de Données</a></li>
+          <li><a href="./bdd_mcd.html">BDD MCD</a></li>
+        </ul>
+      </nav>
+      <h1>Les dictionnaires de Données</h1>
+    </header>
+    <article>
+      <header>
+        <h2>Construction d'un dictionnaire de Données</h2>
+      </header>
+      <p>La construction du dictionnaire de donnée débute par une énumération
+      de l'ensemble des donnée que la base devra manipuler.</p>
+      <p>On s'attache ensuite à décrire le plus clairement possible ces Données
+      en leur donnant des noms équivoques</p>
+      <p>On détaille remplit ensuite les colonnes du dictionnaire de donnée</p>
+      <table>
+        <tr>
+          <th>Nom de la colonne</th><th>Rôle de la colonne</th>
+        </tr>
+        <tr>
+          <td>Nom de la donnée</td><td>Nom équivoque et compréhensible</td>
+        </tr>
+        <tr>
+          <td>Définition</td><td>Phrase de description de la donnée</td>
+        </tr>
+        <tr>
+          <td>Structure</td><td>Type de la donnée, alpha, num, date...</td>
+        </tr>
+        <tr>
+          <td>Type</td><td>La donnée est-elle élementaire ou calculable ?</td>
+        </tr>
+        <tr>
+          <td>Quantification</td><td>Estimation du nombre de valeur possible</td>
+        </tr>
+        <tr>
+          <td>Exemples</td><td>Ex de valeur que peut prendre la donnée</td>
+        </tr>
+        <tr>
+          <td>Commentaires</td><td>Info intéressante en plus sur la donnée</td>
+        </tr>
+      </table>
+    </article>
+    <article>
+      <h3>Exemple de dictionnaire de donnée</h3>
+      <table>
+        <caption>Dictionnaire de Données d'un ticket de caisse</caption>
+        <tr>
+          <th>Nom de Donnée</th><th>Définition</th><th>Structure</th><th>Type</th><th>Quantification</th><th>Exemples</th><th>Commentaires</th>
+        </tr>
+        <tr>
+          <td>Produit</td><td>Produit Acheté</td><td>Alpha</td><td>Elem</td><td>50</td><td>Tarte</td><td>ø</td>
+        </tr>
+        <tr>
+          <td>Prix</td><td>Prix du Produit</td><td>Num</td><td>Elem</td><td>0-100</td><td>2.25</td><td>ø</td>
+        </tr>
+        <tr>
+          <td>Paiement</td><td>Moyen de paiment</td><td>Alpha</td><td>Elem</td><td>5</td><td>Chèque</td><td>ø</td>
+        </tr>
+        <tr>
+          <td>Total</td><td>Total des achats</td><td>Num</td><td>Calc</td><td>oo</td><td>15.44</td><td>ø</td>
+        </tr>
+        <tr>
+          <td>Rendu</td><td>Rendu en espèce</td><td>Num</td><td>Calc</td><td>oo</td><td>5.00</td><td>ø</td>
+        </tr>
+        <tr>
+          <td>TVA</td><td>Pourcentage de la TVA</td><td>Num</td><td>Elem</td><td>5</td><td>5.5</td><td>ø</td>
+        </tr>
+        <tr>
+          <td>TVA_cl</td><td>TVA Payé par le client</td><td>Num</td><td>Calc</td><td>oo</td><td>4.20</td><td>ø</td>
+        </tr>
+      </table>
+
+    </article>
+
+    <article>
+      <header>
+        <h2>Les Dépendances Fonctionnelles</h2>
+      </header>
+      <p>Une Dépendance fonctionnelle existe quand une valeur peut être déduite
+      d'une ou plusieurs autres valeur</p>
+      <p>Par exemple, à l'université le n°étudiant permet de connaître sans
+      doute possible le nom et le prénom d'un étudiant</p>
+    </article>
+  </body>
+</html>

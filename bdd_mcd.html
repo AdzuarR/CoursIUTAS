@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="./bdd.css">
+    <title>Base de Données : Le MCD</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="./bdd.html">BDD Accueil</a></li>
+        </ul>
+      </nav>
+      <h1>Le Modèle Conceptuel de Données</h1>
+    </header>
+    <article>
+      <header>
+        <h2>Objectif du MCD</h2>
+      </header>
+      <p>L'objectif du MCD est de faire un schéma représentant les données
+      ainsi que les dépendances fonctionnelle existantes dans la base de
+      donnée</p>
+      <h3>Règles de construction du MCD</h3>
+      <p>Dans un MCD, les Rectangles représentent les entités, ils ont un
+      nom d'entité qui est généralement un nom commum. Et possèdent une ou
+      plusieurs propriétés</p>
+      <p>Les ovales représentent les associations entre les entités, leur
+      nom est de préférence un verbe. Ils peuvent avoir zéro, une ou plusieurs
+      propriétés</p>
+      <p>La propriétés dans un MCD est le plus petit élément d'information</p>
+      <p>La relation dans un MCD est l'association qui relie deux entités,
+      elle peut ne pas avoir de propriétés</p>
+      <h3>Autres règles des MCD</h3>
+      <p>Une entité peut être reliée à elle même par une relation</p>
+      <p>Une relation peut relier une, deux, ou plus de deux entités entres elles</p>
+      <p>L'ensemble des donnée du dictionnaire de donnée doit exister en tant que
+      propriétés dans le MCD></p>
+    </article>
+    <article>
+      <header>
+        <h2>Notion d'Occurence en MCD</h2>
+      </header>
+      <h3>Définition</h3>
+      <p>Une occurence est une valeur possible pour l'/la {Entité,propriétés,Relation}
+      dont il est question</p>
+      <ul>
+        <li><p>L'occurence d'une propriétés est une valeur possible pour cette propriétés</p></li>
+        <li><p>L'occurence d'une entité est un ensemble ayant une existence propre d'occurence de ses propriétés</p></li>
+        <li><p>Aucune propriétés ne peut prendre plus d'une valeur</p></li>
+      </ul>
+    </article>
+  </body>
+</html>
