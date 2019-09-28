@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="reseau.css">
+    <title>Réseau Introduction</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="./reseau_intro.html">Reseau Accueil</a></li>
+        </ul>
+      </nav>
+      <h1>Introduction aux Réseaux</h1>
+    </header>
+    <article>
+      <header>
+        <h2>Objectif du cours :</h2>
+      </header>
+      <ul>
+        <li><p>Assimiler les Bases des Réseaux</p></li>
+        <li><p>Savoir construire et administrer des Réseaux</p></li>
+      </ul>
+    </article>
+    <article>
+      <header>
+        <h2>Définitions :</h2>
+      </header>
+      <h3>Qu'est-ce qu'un Réseau ?</h3>
+      <p>Dans sont sens le plus général, un réseau est une connection entre
+      plusieurs entités, connection dont le but est l'échange d'information.
+      Pour échanger des informations, ces entités vont devoir suivre des protocols</p>
+
+      <h3>Qu'est-ce qu'un protocole ?</h3>
+      <p>Un protocole est un ensemble de règles définissant la manière dont
+      vont communiquer les entités. Dans les réseau ces protocoles sont variés et
+      ont des rôle divers. Dans le cas des réseaux informatique on utilisera
+      généralement un modèle en couche</p>
+    </article>
+
+      <article>
+        <header>
+          <h2>Le modèle OSI</h2>
+        </header>
+        <p>Dans le modèle théorique OSI chaque couche va produire un message qui
+        sera encapsulé pour pouvoir être transmis à la couche inférieure</p>
+        <p>Avec ce modèle, la couche n d'une machine va pouvoir communiquer avec
+        la couche n d'une autre machine</p>
+        <p>Par exemple la couche réseau d'une machine communiquera avec la couche
+        réseau d'une autre machine</p>
+
+        <h3>Les septs Couches du modèle OSI</h3>
+        <ol>
+          <li><p>Application : Accès aux ressource</p></li>
+          <li><p>Présentation : Conversion et chiffrement de données</p></li>
+          <li><p>Session : Communication interhost</p></li>
+          <li><p>Transport : Connection de bout en bout</p></li>
+          <li><p>Réseau : Détermine le parcours et l'adressage logique</p></li>
+          <li><p>Liaison : Adressage physique (Mac et LLC)</p></li>
+          <li><p>Physique : Transmission Binaire en Numérique ou Analogique</p></li>
+        </ol>
+
+        <h4>La couche Physique :</h4>
+        <p>Elle permet la transmission entre deux machines (transmission point à
+         point) d'une suite de Bits. Cette couches peut avoir des interférences</p>
+
+         <h4>La couche Liaison :</h4>
+         <p>Cette couche assure la transmission de trame entre deux noeuds sur
+         le même réseau local. C'est également une transmission de point à point,
+         mais elle permet la correction des erreurs</p>
+
+         <h4>La couche Réseau :</h4>
+         <p>Elle se charge de la transmission des données entre deux noeuds, en
+         passant éventuellement par des intermédiaire</p>
+
+      </article>
+
+  </body>
+</html>
