@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="reseau.css">
+    <title>La couche Liaison</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="./reseau_intro.html">Reseau Accueil</a></li>
+          <li><a href="./reseau_couche_liaison.html">Reseau Couche Liaison</a></li>
+        </ul>
+      </nav>
+      <h1>La Couche Liaison</h1>
+    </header>
+    <article>
+      <h2>Objectifs de la Couche Liaison</h2>
+      <p>Cette couche va permettre le transfert de données entre des machines
+      localisées sur un même réseau local via le protocole Ethernet. Elle se situe
+      juste au dessus de la couche liaison et va donc devoir encapsuler ses trames
+      pour pouvoir les transmettre. Elle est juste en dessous de la couche Réseau et
+      va donc pouvoir recevoir les paquets issus de cette couche pour les transmettre</p>
+
+      <h3>Fonctionnement de la couche Liaison</h3>
+      <p>Les machines doivent être reliées par un Switch ou Hub afin de pouvoir
+      communiquer physiquement. Quand une machine souhaitera envoyer une trame
+      a une autre, elle va faire appel au protocole ARP pour déterminer à qu'elle
+      adresse mac elle doit envoyer la trame</p>
+
+      <h4>Protocole ARP</h4>
+      <p>Chaque machine possède une adresse physique Mac sous la forme d'un nombre
+      binaire de 8 Octet classiquement représenté comme suit : ef:0c:d3:3f:ab:9d:ee:c4
+      le protocol ARP (Adresses resolution protocol), va établir une table ARP qui fera
+      le lien entre les Adresse MAC de destination et l'adresse IP associée</p>
+      <p>C'est grâce à cette table ARP que la machine sait à qui elle envoie la trame ethernet
+      </p>
+      <p>ARP who-has : envoie une requête à toute les machines demandamt de répondre à l'adresse Mac source
+      si l'IP de la machine correspond à l'ARP who-has</p>
+      <p>Exemple ; ARP Who-has adressmacN°..., si je suis la machine qui correspond à cette adresse mac
+      je renvoi un ARP Is-at avec mon adresse MAC. Ainsi l'émeteur de la requête ARP who-has sait où
+      me trouver.</p>
+
+      <p>Pour cibler toute les machine du réseau on émet avec l'adresse de BroadCast,
+      qui dans le cas d'une adresse mac est ff:ff:ff:ff:ff:ff:ff:ff</p>
+
+      <p>On peut connaître le contenu de sa table ARP en tapant la commande arp dans la console
+      pour supprimer une adresse de la table arp on peut utiliser la commande arp -d address</p>
+
+      <h4>Connaître son Adresse MAC</h4>
+      <p>Les Adresses MAC sont unique et désigne une et une seule carte réseau,
+      pour connaître son ou ses adresses MAC sur une machine on utilise la commande ifconfig</p>
+    </article>
+
+  </body>
+</html>

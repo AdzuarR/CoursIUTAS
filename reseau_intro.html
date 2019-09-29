@@ -10,6 +10,7 @@
       <nav>
         <ul>
           <li><a href="./reseau_intro.html">Reseau Accueil</a></li>
+          <li><a href="./reseau_couche_liaison.html">Reseau Couche Liaison</a></li>
         </ul>
       </nav>
       <h1>Introduction aux Réseaux</h1>
@@ -73,7 +74,74 @@
          <h4>La couche Réseau :</h4>
          <p>Elle se charge de la transmission des données entre deux noeuds, en
          passant éventuellement par des intermédiaire</p>
+         <p>Notion :</p>
+         <ul>
+           <li><p>D'adressage Logique</p></li>
+           <li><p>De Routage des Données</p></li>
+           <li><p>Transmission par Paquets</p></li>
+         </ul>
 
+         <h4>La couche Transport</h4>
+         <p>Elle assure la communication de bout en bout des processus. Sur un
+         même hôte plusieurs processus vont pouvoir cohabiter grâce aux ports
+         qui permettrons de les différencier</p>
+         <p>Cette couche offre une possibilité du contrôle des erreurs type, perte
+         de paquets, duplication de paquets</p>
+         <p>Protocles</p>
+         <ul>
+           <li><p>TCP</p></li>
+           <li><p>UDP</p></li>
+         </ul>
+
+         <h4>Les couches Session, Présentation, Application</h4>
+         <p>Elles vont gérer différents protocoles</p>
+         <ul>
+           <li><p>HTTP</p></li>
+           <li><p>FTP</p></li>
+           <li><p>DNS</p></li>
+           <li><p>SMTP</p></li>
+         </ul>
+
+      </article>
+
+      <article>
+        <header>
+          <h2>Exemple du Modèle en couche</h2>
+        </header>
+        <h3>Couche Application</h3>
+        <div>
+          <p>requête HTTP</p>
+        </div>
+        <h3>Couche Transport</h3>
+        <div>
+          <p>Protocole TCP</p>
+          <div>
+            <p>requête HTTP</p>
+          </div>
+        </div>
+        <h3>Couche Réseaux</h3>
+        <div>
+          <p>Protocole IP</p>
+          <div>
+            <p>Protocole TCP</p>
+            <div>
+              <p>Requête HTTP</p>
+            </div>
+          </div>
+        </div>
+        <h3>Couche Liaison</h3>
+        <div>
+          <p>Protocole Ethernet</p>
+          <div>
+            <p>Protocole IP</p>
+            <div>
+              <p>Protocole TCP</p>
+              <div>
+                <p>Requête HTTP</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </article>
 
   </body>
