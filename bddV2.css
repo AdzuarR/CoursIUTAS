@@ -1,0 +1,26 @@
+aside {
+  float:right;
+  border: thin solid;
+  padding: 2%;
+  width:28%;
+
+}
+
+
+#entete {
+  border: thin solid;
+  width: 100%;
+  margin-bottom: 30px;
+
+}
+
+#corps
+{
+  border: thin solid;
+  float: left;
+  width: 65%
+}
+
+article {
+  margin: 4%;
+}
