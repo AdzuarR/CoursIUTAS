@@ -29,3 +29,12 @@ body > div {
   flex-grow: 1;
   background-color: lightgreen;
 }
+
+table {
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid black;
+  text-align: center;
+}
