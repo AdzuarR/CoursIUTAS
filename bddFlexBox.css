@@ -1,0 +1,31 @@
+/** {
+  border: 1px solid red;
+}*/
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+body > div {
+  display: flex;
+}
+
+#section1 {
+  flex-grow: 1;
+  background-color: lightblue;
+}
+
+#section2 {
+  flex-grow: 4;
+  background-color: lightyellow;
+  margin: 5px;
+}
+
+#section3 {
+  flex-grow: 1;
+  background-color: lightgreen;
+}
